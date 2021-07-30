@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<script type="text/javascript" src=".assets/script.js">
+<script type="text/javascript" src="./assets/script.js">
 
 </script>
 
