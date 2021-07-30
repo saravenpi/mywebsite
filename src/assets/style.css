@@ -35,9 +35,12 @@ body {
 .donate {
   font-size: 100%;
   text-decoration: none;
-  color: #f3c4fb;
-  padding: 5px;
+  color: black;
+  padding: 6px;
+  opacity: 1;
   background-color: #C0FDFF;
+  border-radius: 5px;
+  width: max-content;
 }
 
 
@@ -134,9 +137,12 @@ code {
   .donate {
     font-size: 30px;
     text-decoration: none;
-    color: #f3c4fb;
-    padding: 5px;
+    color: black;
+    padding: 6px;
     background-color: #C0FDFF;
+    border-radius: 5px;
+    width: max-content;
+    opacity: 1;
   }
 
   .bmc-btn-text {

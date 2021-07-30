@@ -35,7 +35,7 @@ export default {
   padding: 0;
   overflow: hidden;
   background-color: #f3c4fb;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0 ;
 }
 
 .topnav a.active {
