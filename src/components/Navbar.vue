@@ -1,9 +1,9 @@
 <template>
   <div class="topnav" id="myTopnav">
-    <router-link to="/" active-link="home"> <a href="/">Home</a> </router-link>
+    <router-link to="/" active-link="home"> Home </router-link>
 
-    <router-link to="/skills" active-link="active"> <a href="/skills">My Skills</a> </router-link>
-    <router-link to="/projects" active-link="active"> <a href="/projects">My Projects</a> </router-link>
+    <router-link to="/skills" active-link="active"> My Skills</router-link>
+    <router-link to="/projects" active-link="active"> My Projects </router-link>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="material-icons">menu</i>
     </a>
