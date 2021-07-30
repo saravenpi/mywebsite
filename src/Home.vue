@@ -17,10 +17,10 @@
                   Hello, my name is Sara and I'm a fullstack web developer! I'm constantly learning new languages and frameworks!
 
                   <h1>Contact:</h1>
-                    Get in touch with me on Twitter/Telegram/Github <a href="https://twitter.com/saravenpi"><code>@saravenpi</code></a>
+                    Get in touch with me on Twitter/Telegram/Github <a href="https://twitter.com/saravenpi" target="_blank"><code>@saravenpi</code></a>
 
                   <h1>Donate:</h1>
-                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="saravenpi" data-color="#C0FDFF" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                  <a href="https://buymeacoffee.com/saravenpi" target="_blank"><div class="username">Buy me a coffee</div></a>
               </p>
           </div>
 
