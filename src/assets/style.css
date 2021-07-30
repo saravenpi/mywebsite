@@ -117,7 +117,7 @@ code {
   text-decoration: none;
   color: black;
   display: block;
-  background:  #f3c4fb
+  background:  #f3c4fb;
   text-decoration: none;
   padding: 1em 1em;
 }
@@ -137,7 +137,7 @@ code {
   position:absolute;
   bottom: 0px;
 
-  padding: 100px
+  padding: 100px; 
 }
 @media only screen and (max-device-width : 640px) {
   .profile {
@@ -166,7 +166,7 @@ code {
 
 
   .bmc-btn-text {
-    font-size: 15px; 
+    font-size: 15px;
   }
 
   .bmc-btn {
