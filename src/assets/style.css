@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+
+body {
+  /*background-color:#C0FDFF;*/
+  background: url("https://i.pinimg.com/originals/ed/d4/49/edd44919ed6a265e522cb5f747b6520f.png");
+  background-size: auto;
+
+  font-family: "Space Mono";
+
+  font-weight: 400;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+}
+.avatar {
+  width: 6%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.username {
+  font-size: 180%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
+  color: #C0FDFF;
+}
+
+
+
+a {
+text-decoration: none;
+}
+
+.container {
+  opacity: 0.9;
+  border-radius: 20px;
+  width: 90%;
+  margin: 3%;
+  box-shadow: 0 46px 12px -16px hsla(0, 0%, 0%, 0.05);
+  position: relative;
+  background: #f3c4fb;
+}
+
+.content {
+
+
+  padding: 3.5%;
+
+}
+
+
+
+
+code {
+  color: black;
+
+  padding: 2px 2px;
+
+  background-color: #C8E7FF;
+
+  border-radius: 2px;
+}
+
+
+
+#music-status {
+
+  display: flex;
+  align-items: center;
+
+}
+#music-status a {
+
+  text-decoration: underline;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+.invisible {
+  display: none;
+}
+
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f3c4fb
+  border-radius: 20px;
+}
+
+.topnav a.active {
+  background-color: #C0FDFF;
+  color: #f3c4fb;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.topnav a.home {
+  background-color: #C0FDFF;
+  color: #f3c4fb;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px 0 0 0;
+}
+
+.topnav a  {
+  float: left;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background:  #f3c4fb
+  text-decoration: none;
+  padding: 1em 1em;
+}
+
+/*.topnav a:hover {
+  cursor: pointer;
+  background-color: #E7E9EB;
+}*/
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+.footer {
+  position:absolute;
+  bottom: 0px;
+
+  padding: 100px
+}
+@media only screen and (max-device-width : 640px) {
+  .profile {
+    /*vertical-align: middle;
+    display: inline;*/
+
+    display: block;
+    text-align: center;
+
+  }
+  .avatar {
+    width: 75px;
+    border-radius: 50%;
+    text-align: center;
+
+
+  }
+  .username {
+    text-align: center;
+    font-size: 45px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-decoration: none;
+    color: #C0FDFF;
+  }
+
+
+  .bmc-btn-text {
+    font-size: 15px
+  }
+
+  .bmc-btn {
+    float: center;
+    text-align: center;
+  }
+
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-radius: 0 20px 0 0;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    border-radius: 0 20px 0 0;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
