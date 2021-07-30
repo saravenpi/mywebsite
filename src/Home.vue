@@ -1,14 +1,7 @@
 <template>
   <div id="home">
       <div class="container">
-        <div class="topnav" id="myTopnav">
-          <a href="/" class="home">Home</a>
-          <a href="/skills">My Skills</a>
-          <a href="/projects">My Projects</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="material-icons">menu</i>
-          </a>
-        </div>
+        <Navbar/>
 
           <div class="content">
             <div id="music-status">
@@ -39,13 +32,33 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Navbar
+  },
+  created: function () {
+    fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json")
+    .then(function(response){
+      response.json().then(data => {
+        lasttrack = data.recenttracks.track[0]
+        if (lasttrack["@attr"]) {
+          artist = lasttrack.artist['#text']
+          title = lasttrack.name
+          info = `<i class="material-icons">headphones</i><span>&nbsp;Listening Now:&ensp;</span>`
+          listening = `<a href="${lasttrack.url}" target=”_blank”>${title} by ${artist}`
+          document.getElementById("music-status").innerHTML =  info + listening
+
+        } else {
+            document.getElementById("music-status").innerHTML = null
+        }
+
+      })
+    })
   }
+
 }
 </script>
 
