@@ -45,34 +45,23 @@ export default {
     }
   },
   created: function () {
+
     fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json")
     .then(function(response){
       response.json().then(data => {
-        lasttrack = data.recenttracks.track[0]
+        var lasttrack = data.recenttracks.track[0]
         if (lasttrack["@attr"]) {
-          artist = lasttrack.artist['#text']
-          title = lasttrack.name
-          info = `<i class="material-icons">headphones</i><span>&nbsp;Listening Now:&ensp;</span>`
-          listening = `<a href="${lasttrack.url}" target=”_blank”>${title} by ${artist}`
+          var artist = lasttrack.artist['#text']
+          var title = lasttrack.name
+          var info = `<i class="material-icons">headphones</i><span>&nbsp;Listening Now:&ensp;</span>`
+          var listening = `<a href="${lasttrack.url}" target=”_blank”>${title} by ${artist}`
           this.music_status = info + listening
 
         }
 
       })
     })
-  },
-  methods : {
-    myFunction: function () {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-
   }
-
 }
 </script>
 
