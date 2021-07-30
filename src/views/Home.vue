@@ -33,7 +33,7 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import Navbar from '../components/Navbar.vue'
 
 export default {
   name: 'app',
@@ -65,6 +65,6 @@ export default {
 
 
 
-<style src="./assets/style.css">
+<style src="../assets/style.css">
 
 </style>
