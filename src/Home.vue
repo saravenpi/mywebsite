@@ -4,9 +4,9 @@
         <Navbar/>
 
           <div class="content">
-            <p id="music-status" v-bind="music_status">
+            <div id="music-status">
 
-            </p>
+            </div>
               <h1>
                 <div class="profile">
                   <img src="https://avatars.githubusercontent.com/u/61117321" class="avatar"> <div class="username"> Saravenpi</div>
@@ -39,11 +39,6 @@ export default {
   components: {
     Navbar
   },
-  data() {
-    return {
-      music_status: ""
-    }
-  },
   created: function () {
 
     fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json")
@@ -55,8 +50,10 @@ export default {
           var title = lasttrack.name
           var info = `<i class="material-icons">headphones</i><span>&nbsp;Listening Now:&ensp;</span>`
           var listening = `<a href="${lasttrack.url}" target=”_blank”>${title} by ${artist}`
-          this.music_status = info + listening
+          document.getElementById("music-status").innerHTML =  info + listening
 
+        } else {
+            document.getElementById("music-status").innerHTML = null
         }
 
       })
