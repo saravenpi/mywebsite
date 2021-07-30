@@ -1,37 +1,5 @@
 <template>
-
-  <head>
-
-      <meta charset="utf-8">
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <meta name="title" content="Saravenpi">
-
-      <meta name="description" content="Debugging Humanity">
-
-      <meta name="theme-color" content="#C0FDFF">
-
-      <meta property="og:image" content="https://avatars1.githubusercontent.com/u/61117321">
-
-      <meta name="author" content="saravenpi">
-
-      <meta name="keywords" content="saravenpi">
-
-      <meta name="color" content="#C0FDFF">
-
-      <title>Saravenpi</title>
-
-      <link rel="icon" href="https://avatars1.githubusercontent.com/u/61117321">
-
-      <link rel="stylesheet" href="style.css">
-
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-  </head>
-
-
+  <div id="home">
       <div class="container">
         <div class="topnav" id="myTopnav">
           <a href="/" class="home">Home</a>
@@ -65,8 +33,7 @@
 
       </div>
 
-
-      <script type="text/javascript" src="./script.js"></script>
+    </div>
 
 
 </template>
@@ -75,11 +42,10 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
+  name: 'home',
   components: {
     HelloWorld
-  },
-  mounted
+  }
 }
 </script>
 
