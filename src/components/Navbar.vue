@@ -4,7 +4,6 @@
 
     <router-link to="/skills" active-class="active" exact> My Skills</router-link>
     <router-link to="/projects" active-class="active" exact> My Projects </router-link>
-    <router-link to="/blog" active-class="active" exact> Blog </router-link>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="material-icons">menu</i>
     </a>
