@@ -91,7 +91,7 @@ code {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f3c4fb
+  background-color: #f3c4fb;
   border-radius: 20px;
 }
 
@@ -166,7 +166,7 @@ code {
 
 
   .bmc-btn-text {
-    font-size: 15px
+    font-size: 15px; 
   }
 
   .bmc-btn {
