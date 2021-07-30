@@ -4,9 +4,9 @@
         <Navbar/>
 
           <div class="content">
-            <div id="music-status" v-model="music_status">
+            <p id="music-status" v-model="music_status">
 
-            </div>
+            </p>
               <h1>
                 <div class="profile">
                   <img src="https://avatars.githubusercontent.com/u/61117321" class="avatar"> <div class="username"> Saravenpi</div>
