@@ -4,7 +4,7 @@
         <Navbar/>
 
           <div class="content">
-            <p id="music-status" v-model="music_status">
+            <p id="music-status" v-bind="music_status">
 
             </p>
               <h1>
