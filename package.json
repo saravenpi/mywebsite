@@ -2,7 +2,7 @@
   "name": "Saravenpi",
   "version": "0.1.0",
   "private": true,
-  "author": "saravenpi,"
+  "author": "saravenpi",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve --port $PORT",
