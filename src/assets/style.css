@@ -33,11 +33,11 @@ body {
 }
 
 .donate {
-  font-size: 140%;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  font-size: 100%;
   text-decoration: none;
-  color: #C0FDFF;
+  color: #f3c4fb;
+  padding: 5px;
+  background-color: #C0FDFF;
 }
 
 
@@ -132,11 +132,11 @@ code {
   }
 
   .donate {
-    font-size: 30%;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    font-size: 30px;
     text-decoration: none;
-    color: #C0FDFF;
+    color: #f3c4fb;
+    padding: 5px;
+    background-color: #C0FDFF;
   }
 
   .bmc-btn-text {
