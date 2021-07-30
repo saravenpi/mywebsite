@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home";
 import Projects from "./views/Projects";
 import Skills from "./views/Skills";
+import Blog from "./views/Blog";
 Vue.use(Router);
 
 
@@ -25,6 +26,12 @@ const router = new Router({
       path: "/projects",
       name: "projects",
       component: Projects,
+      props: false
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      component: Blog,
       props: false
     }
   ]
