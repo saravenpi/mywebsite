@@ -20,7 +20,7 @@
                     Get in touch with me on Twitter/Telegram/Github <a href="https://twitter.com/saravenpi" target="_blank"><code>@saravenpi</code></a>
 
                   <h1>Donate:</h1>
-                  <a href="https://buymeacoffee.com/saravenpi" target="_blank"><div class="username">Buy me a coffee</div></a>
+                  <a href="https://buymeacoffee.com/saravenpi" target="_blank"><div class="donate">Buy me a coffee</div></a>
               </p>
           </div>
 
