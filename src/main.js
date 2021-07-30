@@ -1,17 +1,18 @@
 import Vue from 'vue'
-import App from './App.vue'
-
+import Home from './Home.vue'
+import Skills from './Skills.vue'
+import Projects from './Projects.vue'
 Vue.config.productionTip = false
 
 
 
 const NotFound = { template: '<p>Page not found</p>' }
 
-const About = { template: '<p>about page</p>' }
 
 const routes = {
   '/': App,
-  '/about': About
+  '/skills': Skills,
+  '/projects': Projects
 }
 
 new Vue({
