@@ -10,7 +10,7 @@ const NotFound = { template: '<p>Page not found</p>' }
 
 
 const routes = {
-  '/': App,
+  '/': Home,
   '/skills': Skills,
   '/projects': Projects
 }
