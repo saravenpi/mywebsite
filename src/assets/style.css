@@ -79,6 +79,11 @@ code {
   border-radius: 2px;
 }
 
+.icon {
+  width: 40px;
+  font-size: 22px;
+  color: black;
+}
 
 
 #music-status {
