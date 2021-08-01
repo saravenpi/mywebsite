@@ -28,6 +28,14 @@
                 <a href="https://github.com/saravenpi/uuids" target="_blank"><i class="fab fa-github icon"></i></a>
 
               </div>
+              <div class='card'>
+                <h2>🌙 dream-journal</h2>
+                <p>
+                  A simple dream journal created with ElectronJS and VueJS to record your dreams !
+                </p>
+                <a href="https://github.com/saravenpi/dream-journal" target="_blank"><i class="fab fa-github icon"></i></a>
+
+              </div>
             </div>
           </div>
 
