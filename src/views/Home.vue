@@ -14,7 +14,7 @@
               </h1>
 
               <p>
-                  Hello, my name is Sara and I'm a fullstack web developer! I'm constantly learning new languages and frameworks!
+                  Hello, my name is Sara and I'm web developer! I'm constantly learning new languages and frameworks!
                   <p>
 
                   <a href="https://twitter.com/saravenpi" target="_blank"><i class="fab fa-twitter icon"></i></a>
