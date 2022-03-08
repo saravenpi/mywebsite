@@ -64,7 +64,7 @@ export default {
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
-  background-color: #C0FDFF;
+  background-color: #89DCEB;
   box-shadow:  0 46px 12px -16px hsla(0, 0%, 0%, 0.05);
 }
 @media only screen and (max-device-width : 640px) {
@@ -76,7 +76,7 @@ export default {
     width: auto;
     border-radius: 20px;
     padding: 20px;
-    background-color: #C0FDFF;
+    background-color: #89DCEB;
     box-shadow:  0 46px 12px -16px hsla(0, 0%, 0%, 0.05);
   }
 

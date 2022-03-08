@@ -13,20 +13,15 @@
                 </div>
               </h1>
 
-              <p>
                   Hello, my name is Sara and I'm web developer! I'm constantly learning new languages and frameworks!
                   <p>
-
-                  <a href="https://twitter.com/saravenpi" target="_blank"><i class="fab fa-twitter icon"></i></a>
-                  <a href="https://github.com/saravenpi" target="_blank"><i class="fab fa-github icon"></i></a>
-                  <a href="https://discord.gg/pJQJcenWY7" target="_blank"><i class="fab fa-discord icon"></i></a>
+                    <a href="https://twitter.com/saravenpi" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                    <a href="https://github.com/saravenpi" target="_blank"><i class="fab fa-github icon"></i></a>
+                    <a href="https://discord.gg/pJQJcenWY7" target="_blank"><i class="fab fa-discord icon"></i></a>
                   </p>
-
-
 
                   <h1>Donate:</h1>
                   <a href="https://buymeacoffee.com/saravenpi" target="_blank"><div class="donate">Buy me a coffee</div></a>
-              </p>
           </div>
 
       </div>

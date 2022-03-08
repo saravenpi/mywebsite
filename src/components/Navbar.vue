@@ -1,7 +1,6 @@
 <template>
   <div class="topnav" id="myTopnav">
     <router-link to="/" active-class="home" exact> Home </router-link>
-
     <router-link to="/skills" active-class="active" exact> My Skills</router-link>
     <router-link to="/projects" active-class="active" exact> My Projects </router-link>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -35,20 +34,20 @@ export default {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f3c4fb;
+  background-color: #E8A2AF;
   border-radius: 20px 20px 0 0 ;
 }
 
 .topnav a.active {
-  background-color: #C0FDFF;
-  color: #f3c4fb;
+  background-color: #89DCEB;
+  color: #E8A2AF;
   font-weight: bold;
   text-decoration: none;
 
 }
 .topnav a.home {
-  background-color: #C0FDFF;
-  color: #f3c4fb;
+  background-color: #89DCEB;
+  color: #E8A2AF;
   font-weight: bold;
   text-decoration: none;
   border-radius: 20px 0 0 0;
@@ -61,7 +60,7 @@ export default {
   text-decoration: none;
   color: black;
   display: block;
-  background:  #f3c4fb;
+  background:  #E8A2AF;
   text-decoration: none;
   padding: 1em 1em;
 }
