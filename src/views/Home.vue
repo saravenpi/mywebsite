@@ -1,36 +1,41 @@
 <template>
   <div id="home">
-      <div class="container">
-        <Navbar/>
-
-          <div class="content">
-            <div id="music-status">
-
-            </div>
-              <h1>
-                <div class="profile">
-                  <img src="https://avatars.githubusercontent.com/u/61117321" class="avatar"> <div class="username"> Saravenpi</div>
-                </div>
-              </h1>
-
-                  Hello, my name is Sara and I'm web developer! I'm constantly learning new languages and frameworks!
-                  <p>
-                    <a href="https://twitter.com/saravenpi" target="_blank"><i class="fab fa-twitter icon"></i></a>
-                    <a href="https://github.com/saravenpi" target="_blank"><i class="fab fa-github icon"></i></a>
-                    <a href="https://discord.gg/pJQJcenWY7" target="_blank"><i class="fab fa-discord icon"></i></a>
-                  </p>
-
-                  <h1>Donate:</h1>
-                  <a href="https://buymeacoffee.com/saravenpi" target="_blank"><div class="donate">Buy me a coffee</div></a>
-          </div>
-
+    <Navbar/>
+     <div id="music-status"></div>
+     <div class="title">
+        Saravenpi
+        <br>
+        =========
       </div>
 
-    </div>
+      <p>
+       Hello, my name is Sara and I'm a developer!
+      </p>
 
+      <h2>Contact:</h2>
+      <ul>
+        <li>
+          <a href="https://twitter.com/saravenpi" target="_blank">twitter</a>
+        </li>
 
+        <li>
+          <a href="https://github.com/saravenpi" target="_blank">github</a>
+        </li>
+
+        <li>
+          <a href="https://discord.gg/pJQJcenWY7" target="_blank">discord</a>
+        </li>
+      </ul>
+
+      <h2>Donate:</h2>
+
+      <a href="https://buymeacoffee.com/saravenpi" target="_blank">
+        <div class="donate">
+          Buy me a coffee
+        </div>
+      </a>
+  </div>
 </template>
-<!--<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>-->
 
 
 <script>
@@ -66,6 +71,4 @@ export default {
 
 
 
-<style src="../assets/style.css">
-
-</style>
+<style src="../assets/style.css"></style>

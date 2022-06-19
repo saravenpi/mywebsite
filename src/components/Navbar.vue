@@ -1,8 +1,8 @@
 <template>
   <div class="topnav" id="myTopnav">
-    <router-link to="/" active-class="home" exact> Home </router-link>
-    <router-link to="/skills" active-class="active" exact> My Skills</router-link>
-    <router-link to="/projects" active-class="active" exact> My Projects </router-link>
+    <router-link to="/" active-class="active" exact> Home </router-link>
+    <router-link to="/skills" active-class="active" exact> Skills</router-link>
+    <router-link to="/projects" active-class="active" exact> Projects </router-link>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="material-icons">menu</i>
     </a>
@@ -34,20 +34,14 @@ export default {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E8A2AF;
-  border-radius: 20px 20px 0 0 ;
 }
 
 .topnav a.active {
-  background-color: #89DCEB;
-  color: #E8A2AF;
   font-weight: bold;
-  text-decoration: none;
-
+  text-decoration: underline;
 }
+
 .topnav a.home {
-  background-color: #89DCEB;
-  color: #E8A2AF;
   font-weight: bold;
   text-decoration: none;
   border-radius: 20px 0 0 0;
@@ -57,18 +51,13 @@ export default {
   float: left;
   border: none;
   font-size: 20px;
-  text-decoration: none;
-  color: black;
+  color: white;
   display: block;
-  background:  #E8A2AF;
   text-decoration: none;
-  padding: 1em 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
-/*.topnav a:hover {
-  cursor: pointer;
-  background-color: #E7E9EB;
-}*/
 .topnav .icon {
   display: none;
 }
