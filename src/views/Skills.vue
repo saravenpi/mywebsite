@@ -4,15 +4,14 @@
     <div class="content">
       <h2>Skills:</h2>
 
-      I work with the following languages/frameworks:
-
       <ul>
         <li>*.html</li>
         <li>*.css</li>
         <li>*.js</li>
         <li>*.go</li>
-        <li>*.cs</li>
+        <li>*.rs</li>
         <li>*.py</li>
+        <li>*.cs</li>
         <li>*.vue</li>
       </ul>
   </div>
