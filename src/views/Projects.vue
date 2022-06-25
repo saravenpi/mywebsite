@@ -5,6 +5,14 @@
     <h2>Projects:</h2>
 
     <div class='card'>
+      <h3>🫖 kettle</h3>
+      <p>
+        A boilerplate manager cli-tool built with Rust
+      </p>
+      <a href="https://github.com/saravenpi/kettle" target="_blank">github</a>
+    </div>
+
+    <div class='card'>
       <h3>🍂 drop-game</h3>
       <p>
         An overlay game that reacts to a twitch chat
