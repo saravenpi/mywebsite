@@ -2,6 +2,7 @@
   <div class="topnav" id="myTopnav">
     <router-link to="/" active-class="active" exact> Home </router-link>
     <router-link to="/skills" active-class="active" exact> Skills</router-link>
+    <a href="https://blog.saravenpi.tk" active-class="active"> Blog</a>
     <router-link to="/projects" active-class="active" exact> Projects </router-link>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="material-icons">menu</i>
