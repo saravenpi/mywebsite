@@ -86,8 +86,8 @@ declare module '$env/static/private' {
 	export const SESSION_MANAGER: string;
 	export const npm_package_name: string;
 	export const NODE: string;
-	export const XDG_RUNTIME_DIR: string;
 	export const XDG_MENU_PREFIX: string;
+	export const XDG_RUNTIME_DIR: string;
 	export const DISPLAY: string;
 	export const CKITTY: string;
 	export const LANG: string;
@@ -128,6 +128,7 @@ declare module '$env/static/private' {
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const npm_package_scripts_preview: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
+	export const PNPM_HOME: string;
 	export const TMUX_PANE: string;
 	export const CPOLYBAR: string;
 	export const EDITOR: string;
@@ -222,8 +223,8 @@ declare module '$env/dynamic/private' {
 		SESSION_MANAGER: string;
 		npm_package_name: string;
 		NODE: string;
-		XDG_RUNTIME_DIR: string;
 		XDG_MENU_PREFIX: string;
+		XDG_RUNTIME_DIR: string;
 		DISPLAY: string;
 		CKITTY: string;
 		LANG: string;
@@ -264,6 +265,7 @@ declare module '$env/dynamic/private' {
 		PNPM_SCRIPT_SRC_DIR: string;
 		npm_package_scripts_preview: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
+		PNPM_HOME: string;
 		TMUX_PANE: string;
 		CPOLYBAR: string;
 		EDITOR: string;
