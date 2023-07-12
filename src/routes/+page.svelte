@@ -1,4 +1,22 @@
 <script>
+    var music_text = null
+    var url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json"
+    fetch(url)
+        .then(response => {
+            response.json()
+                .then(data => {
+                    var lasttrack = data.recenttracks.track[0]
+                    if (lasttrack["@attr"]) {
+                        var artist = lasttrack.artist['#text']
+                        var title = lasttrack.name
+                        var info = `🎧 <span>&nbsp;Listening Now:&ensp;</span>`
+                        var listening = `<a href="${lasttrack.url}" target=”_blank”>${title} by ${artist}`
+                        music_text = info + "" + listening
+                    }
+                    else
+                        music_text = null
+                })
+        })
 </script>
 <div>
     <div class="m-28 rounded p-10">
@@ -21,6 +39,9 @@
         </div>
 
         <img src="https://avatars.githubusercontent.com/u/61117321" width="100em" class="rounded-full mb-10">
+        <div class="text-2xl text-black">
+            {{music_text}}
+        </div>
         <div class="text-4xl mb-5">
             Hi I'm Saravenpi ! 👋
         </div>
