@@ -23,8 +23,10 @@
         <div class="text-4xl mb-5">
             Skills
         </div>
-        <div class="text-xl mb-10 ml-10">
-            I use <a class="underline" href="https://voidlinux.org/">Void Linux</a> 🐧 as my main operating system you can know more about the tools I use and their configuration on this repo: <a class="underline" href="https://github.com/saravenpi/dotfiles">dotfiles</a>
+        <div class="text-xl mb-10 ml-5">
+            I use <a class="underline" href="https://voidlinux.org/">Void Linux</a> 🐧 as my main operating system.
+            <br>
+            You can know more about the tools I use here: <a class="underline" href="https://github.com/saravenpi/dotfiles">dotfiles</a>
         </div>
         <div class="text-3xl mb-4">
             Programming Languages/Frameworks
