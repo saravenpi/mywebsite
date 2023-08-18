@@ -32,16 +32,17 @@
             Programming Languages/Frameworks
         </div>
         <div class="text-xl ml-10">
-            <li>*.c</li>
-            <li>*.go</li>
-            <li>*.rs</li>
-            <li>*.cs</li>
-            <li>*.py</li>
-            <li>*.html</li>
-            <li>*.css</li>
-            <li>*.js</li>
-            <li>*.vue</li>
-            <li>*.svelte</li>
+            <li>C</li>
+            <li>NodeJs</li>
+            <li>Go</li>
+            <li>Rust</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Vue</li>
+            <li>Svelte</li>
         </div>
     </div>
 </div>
