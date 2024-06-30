@@ -33,7 +33,7 @@
         </div>
 
         <div class="text-xl mb-5">
-            I'm a 21 years old software developer.
+            I'm a 22 years old software developer.
             <br />
             I'm currently studying computer science
         </div>
