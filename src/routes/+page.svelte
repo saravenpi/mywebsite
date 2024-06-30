@@ -20,13 +20,16 @@
 <div>
     <div class="lg:m-28 m-10 rounded lg:p-10 p-2">
         <img
+            alt="avatar"
             src="https://avatars.githubusercontent.com/u/61117321"
             width="100em"
             class="rounded-full mb-10"
         />
         <div class="lg:text-4xl text-3xl mb-3">Hi I'm Saravenpi ! 👋</div>
-        <div class="text-xl mb-10 text-gray-500">
-            {@html music_text}
+        <div class="text-xl mb-10 text-gray-k00">
+            {#if music_text}
+                {@html music_text}
+            {/if}
         </div>
 
         <div class="text-xl mb-5">
