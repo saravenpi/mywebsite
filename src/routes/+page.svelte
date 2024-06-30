@@ -25,7 +25,9 @@
             width="100em"
             class="rounded-full mb-10"
         />
+
         <div class="lg:text-4xl text-3xl mb-3">Hi I'm Saravenpi ! 👋</div>
+
         <div class="text-xl mb-10 text-gray-k00">
             {#if music_text}
                 {@html music_text}
@@ -37,58 +39,8 @@
             <br />
             I'm currently studying computer science
         </div>
+
         <div class="flex flex-row gap-6">
-            <div style="opacity: 1; transform: none;">
-                <a
-                    title="twitter"
-                    href="https://twitter.com/saravenpi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="hover:opacity-40 duration-500 transition-opacity dark:text-black"
-                    >
-                        <path
-                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                        />
-                    </svg>
-                </a>
-            </div>
-            <div style="opacity: 1; transform: none;">
-                <a
-                    title="discord"
-                    href="/discord"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="hover:opacity-40 duration-500 transition-opacity dark:text-black"
-                    >
-                        <circle cx="12" cy="12" r="4" />
-                        <path
-                            d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"
-                        />
-                    </svg>
-                </a>
-            </div>
             <div style="opacity: 1; transform: none;">
                 <a
                     title="github"
@@ -114,6 +66,33 @@
                     </svg>
                 </a>
             </div>
+
+            <div style="opacity: 1; transform: none;">
+                <a
+                    title="twitter"
+                    href="https://twitter.com/saravenpi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="hover:opacity-40 duration-500 transition-opacity dark:text-black"
+                    >
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                        />
+                    </svg>
+                </a>
+            </div>
+
             <div style="opacity: 1; transform: none;">
                 <a
                     title="email"
