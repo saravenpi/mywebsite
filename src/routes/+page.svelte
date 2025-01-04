@@ -29,11 +29,11 @@
 				class="rounded-full"
 			/>
 
-			<div class="text-6xl font-extrabold">Hi I'm Saravenpi ! 👋</div>
+			<div class="text-3xl md:text-6xl font-extrabold">Hi I'm Saravenpi ! 👋</div>
 		</div>
 
 		<!-- About -->
-		<div class="text-3xl flex flex-col gap-3">
+		<div class="text-xl md:text-3xl flex flex-col gap-3">
 			<p>I'm a 22 fullstack software developer</p>
 			<p>I'm currently studying computer science</p>
 		</div>
@@ -116,7 +116,7 @@
 	</div>
 
 	<!-- Listening Now -->
-	<div class="text-3xl text-gray-600 p-10">
+	<div class="text-xl md:text-3xl text-gray-600 p-10">
 		{#if music_text}
 			{@html music_text}
 		{/if}
