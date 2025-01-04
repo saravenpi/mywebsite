@@ -9,8 +9,8 @@
 			if (lasttrack["name"]) {
 				var artist = lasttrack.artist["#text"];
 				var title = lasttrack.name;
-				var info = `🎧 Listening Now: `;
-				var listening = `<a href="${lasttrack.url}" target=”_blank” class="hover:underline font-bold">${title} by ${artist}`;
+				var info = `🎧 Listening Now:&nbsp;`;
+				var listening = ` <a href="${lasttrack.url}" target=”_blank” class="hover:underline font-bold">${title} by ${artist}`;
 				music_text = info + listening;
 			} else music_text = null;
 		});
@@ -117,7 +117,9 @@
 	</div>
 
 	<!-- Listening Now -->
-	<div class="text-md md:text-2xl text-gray-600 p-10">
+	<div
+		class="w-full md:flex flex-row md:justify-end text-md md:text-2xl text-gray-600 p-5 md:p-10"
+	>
 		{#if music_text}
 			{@html music_text}
 		{/if}
