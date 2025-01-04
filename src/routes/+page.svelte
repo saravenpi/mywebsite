@@ -17,19 +17,20 @@
 	});
 </script>
 
-<div class="flex flex-col justify-between h-screen w-full">
+<div class="flex flex-col justify-between h-[100svh] w-full">
 	<div />
-	<div class="w-full flex flex-col gap-6 rounded p-10 md:p-52">
+	<div class="w-full flex flex-col gap-6 rounded p-5 md:p-52">
 		<!-- Card -->
-		<div class="flex flex-row gap-6 items-center">
+		<div class="flex flex-row gap-3 md:gap-6 items-center">
 			<img
 				alt="avatar"
 				src="https://avatars.githubusercontent.com/u/61117321"
-				width="100em"
-				class="rounded-full"
+				class="rounded-full w-[6em] md:w-[10em]"
 			/>
 
-			<div class="text-3xl md:text-6xl font-extrabold">Hi I'm Saravenpi ! 👋</div>
+			<div class="text-3xl md:text-6xl font-extrabold">
+				Hi I'm Saravenpi
+			</div>
 		</div>
 
 		<!-- About -->
