@@ -117,7 +117,7 @@
 	</div>
 
 	<!-- Listening Now -->
-	<div class="text-xl md:text-3xl text-gray-600 p-10">
+	<div class="text-md md:text-2xl text-gray-600 p-10">
 		{#if music_text}
 			{@html music_text}
 		{/if}
