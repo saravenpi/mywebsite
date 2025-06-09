@@ -67,7 +67,7 @@
 
 			<a
 				title="twitter"
-				href="https://twitter.com/saravenpi"
+				href="https://x.com/saravenpi"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
@@ -123,5 +123,47 @@
 		{#if music_text}
 			{@html music_text}
 		{/if}
+	</div>
+</div>
+
+<div class="flex flex-col gap-10 w-full p-5 md:p-20">
+	<div class="text-5xl font-extrabold text-center mb-10">Projects</div>
+
+	<!-- Projects -->
+	<div class="flex flex-row flex-wrap gap-16 justify-center w-full">
+		<div
+			class="flex flex-col p-10 rounded-xl w-full border-2 shadow gap-3 md:w-[28em] md:h-max"
+		>
+			<h1 class="text-3xl font-bold">DistiLife</h1>
+			<p class="text-2xl">A distillation ERP software</p>
+		</div>
+
+		<div
+			class="flex flex-col p-10 rounded-xl border-2 shadow gap-3 md:w-[28em] md:h-max"
+		>
+			<h1 class="text-3xl font-bold">Poopometer</h1>
+			<p class="text-2xl">The AI world crisis indicator</p>
+		</div>
+
+		<div
+			class="flex flex-col p-10 rounded-xl w-full border-2 shadow md:w-[28em] md:h-max"
+		>
+			<h1 class="text-3xl font-bold">Marcel</h1>
+			<p class="text-2xl">Turn your life organisation into a game</p>
+		</div>
+
+		<div
+			class="flex flex-col p-10 rounded-xl w-full border-2 shadow gap-3 md:w-[28em] md:h-max"
+		>
+			<h1 class="text-3xl font-bold">Wave</h1>
+			<p class="text-2xl">A C HTTP server library</p>
+		</div>
+
+		<div
+			class="flex flex-col p-10 rounded-xl w-full border-2 shadow gap-3 md:w-[28em] md:h-max"
+		>
+			<h1 class="text-3xl font-bold">Brain.h</h1>
+			<p class="text-2xl">A C neural network library</p>
+		</div>
 	</div>
 </div>
