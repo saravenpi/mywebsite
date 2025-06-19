@@ -99,6 +99,7 @@ backupFile ".currentapp.sh"
 backupFile ".desktop.sh"
 backupFile ".menu.sh"
 backupFile ".openchatgpt.sh"
+backupFile ".aerospace.toml"
 
 # Backup folders
 backupFolder "fonts"
@@ -132,7 +133,7 @@ git clone https://github.com/saravenpi/dotfiles $HOME/.dotfiles
 echo "ℹ️ Installing config with stow"
 cd $HOME/.dotfiles/
 stow fonts
-stow i3 dunst scripts picom polybar rofi
+stow i3 dunst scripts picom polybar rofi aerospace
 stow kitty tmux fish bash starship ghostty
 stow nvim vim clang-format emacs
 stow git lazygit kettle
@@ -215,6 +216,11 @@ echo "✅ Installed starship successfully"
 echo "ℹ️ Installing tmp (tmux plugin manager)"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "✅ Installed tpm successfully"
+
+# Install Egg, tmux layout manager
+echo "ℹ️ Installing egg (tmux layout manager)"
+chmod +x $HOME/.dotfiles/egg-install.sh
+bash $HOME/.dotfiles/egg-install.sh
 
 # Optional: Install Nvim with ./nvim-install.sh script (prompt for yes/no)
 chmod +x $HOME/.dotfiles/nvim-install.sh
