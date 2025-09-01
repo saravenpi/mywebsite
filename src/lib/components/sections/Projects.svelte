@@ -35,7 +35,7 @@
       name: "pebble.nvim",
       description:
         " Obsidian markdown navigation and note taking plugin for Neovim.",
-      url: "https://github.com/saravepi/pebble.nvim",
+      url: "https://github.com/saravenpi/pebble.nvim",
       color: "blue",
       icon: "solar:notebook-bold-duotone",
     },
