@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Icon from "@iconify/svelte";
 
   var music_text = null;
   var url =
@@ -12,9 +13,8 @@
         if (lasttrack["name"]) {
           var artist = lasttrack.artist["#text"];
           var title = lasttrack.name;
-          var info = `🎧 Listening Now&nbsp;`;
-          var listening = ` <a href="${lasttrack.url}" target="_blank" class="hover:underline font-bold">${title} by ${artist}`;
-          music_text = info + listening;
+          var listening = ` <a href="${lasttrack.url}" target="_blank" class="hover:underline font-bold">${title} by ${artist}</a>`;
+          music_text = listening;
         } else music_text = null;
       });
     });
@@ -121,7 +121,16 @@
     class="w-full md:flex flex-row md:justify-end text-md md:text-2xl text-gray-600 dark:text-gray-400 p-5 md:p-10"
   >
     {#if music_text}
-      {@html music_text}
+      <div class="flex items-center gap-2">
+        <Icon 
+          icon="solar:headphones-round-sound-bold-duotone" 
+          width="24" 
+          height="24"
+          class="text-green-600 dark:text-green-400"
+        />
+        <span>Listening Now</span>
+        {@html music_text}
+      </div>
     {/if}
   </div>
 </div>

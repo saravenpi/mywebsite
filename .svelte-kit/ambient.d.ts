@@ -42,6 +42,7 @@ declare module '$env/static/private' {
 	export const MallocSpaceEfficient: string;
 	export const WINDOWID: string;
 	export const MallocNanoZone: string;
+	export const VIPSHOME: string;
 	export const EXTENSION_KIT_EXTENSION_TYPE: string;
 	export const npm_config_local_prefix: string;
 	export const GIT_EDITOR: string;
@@ -142,6 +143,7 @@ declare module '$env/dynamic/private' {
 		MallocSpaceEfficient: string;
 		WINDOWID: string;
 		MallocNanoZone: string;
+		VIPSHOME: string;
 		EXTENSION_KIT_EXTENSION_TYPE: string;
 		npm_config_local_prefix: string;
 		GIT_EDITOR: string;
