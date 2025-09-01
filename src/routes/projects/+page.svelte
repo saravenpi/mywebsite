@@ -1,87 +1,31 @@
 <script>
+  import Projects from "$lib/components/sections/Projects.svelte";
 </script>
-<div>
-    <div class="m-28 rounded p-10">
-        <div class="grid grid-cols-4 mb-10 gap-4">
-            <a href="/">
-                <div class="text-xl bg-stone-200 rounded p-3 hover:bg-stone-400">
-                    Home
-                </div>
-            </a>
-            <a href="/projects">
-                <div class="text-xl bg-stone-500 rounded p-3 hover:bg-stone-400 text-white">
-                    Projects
-                </div>
-            </a>
-            <a href="/skills">
-                <div class="text-xl bg-stone-200 rounded p-3 hover:bg-stone-400">
-                    Skills
-                </div>
-            </a>
-        </div>
 
-        <div class="text-4xl mb-5">
-            Projects:
-        </div>
-        <div class="grid grid-cols-3 gap-4">
-            <a href="https://kettle-app.vercel.app">
-                <div class="bg-stone-300 p-10 rounded hover:bg-stone-400">
-                    <div class="text-3xl mb-3">
-                        🫖 kettle
-                    </div>
-                    <div class="text-xl">
-                        Kettle is a boilerplate manager, locally or in the cloud.
-                        <br>
-                        It helps you to start projects faster.
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/saravenpi/drop-game">
-                <div class="bg-stone-300 p-10 rounded hover:bg-stone-400">
-                    <div class="text-3xl mb-3">
-                        🍂 drop-game
-                    </div>
-                    <div class="text-xl">
-                        A twitch overlay game that reacts to the chat
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/saravenpi/ascii_camera">
-                <div class="bg-stone-300 p-10 rounded hover:bg-stone-400">
-                    <div class="text-3xl mb-3">
-                        📷 ascii_camera
-                    </div>
-                    <div class="text-xl">
-                        Program that creates a live ascii art from your camera
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/saravenpi/speed_typing_test">
-                <div class="bg-stone-300 p-10 rounded hover:bg-stone-400">
-                    <div class="text-3xl mb-3">
-                        📷 speed_typing_test
-                    </div>
-                    <div class="text-xl">
-                        Program that tests your typing speed with random words
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/saravenpi/speed_typing_test">
-                <div class="bg-stone-300 p-10 rounded hover:bg-stone-400">
-                    <div class="text-3xl mb-3">
-                        📦 uuids
-                    </div>
-                    <div class="text-xl">
-                        An npm package to generate unique ids for your projects
-                    </div>
-                </div>
-            </a>
+<svelte:head>
+  <title>Projects - Saravenpi</title>
+  <meta
+    name="description"
+    content="Explore my portfolio of web development projects. From full-stack applications to creative side projects, see what I've been building."
+  />
+  <meta
+    name="keywords"
+    content="portfolio, projects, web development, JavaScript, Svelte, React, full stack"
+  />
+  <meta name="theme-color" content="#16a34a" />
+  <meta property="og:title" content="Projects - Saravenpi" />
+  <meta
+    property="og:description"
+    content="Explore my portfolio of web development projects. From full-stack applications to creative side projects, see what I've been building."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saravenpi.com/projects" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects - Saravenpi" />
+  <meta
+    name="twitter:description"
+    content="Explore my portfolio of web development projects. From full-stack applications to creative side projects, see what I've been building."
+  />
+</svelte:head>
 
-        </div>
-    </div>
-</div>
-<style lang="postcss">
-    :global(html) {
-        background-color: #white;
-    }
-</style>
+<Projects />
