@@ -26,7 +26,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@iconify/svelte": "^5.0.1",
+    "@iconify/svelte": "^4.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "mdsvex": "^0.12.6"
   }
