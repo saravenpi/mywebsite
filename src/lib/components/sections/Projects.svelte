@@ -53,13 +53,32 @@
         class="relative flex flex-col p-10 rounded-xl border-2 shadow gap-3 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
       >
         <div
-          class="absolute top-4 right-4 w-12 h-12 bg-{project.color}-100 dark:bg-{project.color}-900/30 rounded-xl flex items-center justify-center"
+          class="absolute top-4 right-4 w-12 h-12 rounded-xl flex items-center justify-center"
+          class:bg-orange-100={project.color === 'orange'}
+          class:dark:bg-orange-900/30={project.color === 'orange'}
+          class:bg-purple-100={project.color === 'purple'}
+          class:dark:bg-purple-900/30={project.color === 'purple'}
+          class:bg-green-100={project.color === 'green'}
+          class:dark:bg-green-900/30={project.color === 'green'}
+          class:bg-pink-100={project.color === 'pink'}
+          class:dark:bg-pink-900/30={project.color === 'pink'}
+          class:bg-blue-100={project.color === 'blue'}
+          class:dark:bg-blue-900/30={project.color === 'blue'}
         >
           <Icon
             icon={project.icon}
             width="24"
             height="24"
-            class="text-{project.color}-600 dark:text-{project.color}-400"
+            class:text-orange-600={project.color === 'orange'}
+            class:dark:text-orange-400={project.color === 'orange'}
+            class:text-purple-600={project.color === 'purple'}
+            class:dark:text-purple-400={project.color === 'purple'}
+            class:text-green-600={project.color === 'green'}
+            class:dark:text-green-400={project.color === 'green'}
+            class:text-pink-600={project.color === 'pink'}
+            class:dark:text-pink-400={project.color === 'pink'}
+            class:text-blue-600={project.color === 'blue'}
+            class:dark:text-blue-400={project.color === 'blue'}
           />
         </div>
         <h1 class="text-3xl font-bold">{project.name}</h1>
