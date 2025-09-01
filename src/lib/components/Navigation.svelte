@@ -7,19 +7,19 @@
       id: "home",
       label: "Home",
       href: "/",
-      icon: "solar:home-bold",
+      icon: "solar:home-2-bold-duotone",
     },
     {
       id: "projects",
       label: "Projects",
       href: "/projects",
-      icon: "solar:case-minimalistic-bold",
+      icon: "solar:code-square-bold-duotone",
     },
     {
       id: "blog",
       label: "Blog",
       href: "/blog",
-      icon: "solar:book-bold",
+      icon: "solar:notes-bold-duotone",
     },
   ];
 
@@ -59,11 +59,7 @@
             ? 'text-white'
             : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'}"
         >
-          <Icon
-            icon={section.icon}
-            width="20"
-            height="20"
-          />
+          <Icon icon={section.icon} width="20" height="20" />
           <span>{section.label}</span>
         </a>
       {/each}
@@ -97,11 +93,7 @@
             ? 'text-white'
             : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100'}"
         >
-          <Icon
-            icon={section.icon}
-            width="24"
-            height="24"
-          />
+          <Icon icon={section.icon} width="24" height="24" />
         </a>
       {/each}
     </div>
