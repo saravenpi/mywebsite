@@ -1,6 +1,6 @@
 ---
 title: "Code Modularity: Building Reusable Components Across Projects"
-date: "2025-01-06"
+date: "2024-09-07"
 description: "Exploring how modular code architecture can accelerate development and reduce complexity, featuring the knot project as a modern solution for multi-language monorepos"
 tags: ["backend", "architecture", "modularity", "monorepo", "tools"]
 ---
