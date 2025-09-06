@@ -2,7 +2,7 @@
 title: "Welcome to my blog"
 date: "2025-01-01"
 description: "My first blog post where I share my thoughts about starting this journey"
-tags: ["welcome", "personal", "introduction"]
+tags: ["welcome"]
 ---
 
 # Welcome to my blog
