@@ -63,25 +63,57 @@ This complexity led me to create [knot](https://github.com/saravenpi/knot), a la
 Here's how knot addresses the modularity challenges I mentioned earlier:
 
 ```yaml
-# knot.yaml example
-packages:
-  - source: local
-    path: packages/auth
-  - source: local
-    path: packages/database
-  - source: online
-    url: https://github.com/saravenpi/common-validators
+# knot.yml example
+name: MyProject
+description: Multi-language monorepo with shared packages
+scripts:
+  test: "knot run test"
+  build: "knot run build"
 
 apps:
-  - path: apps/user-service
-  - path: apps/admin-panel
+  user-service:
+    tsAlias: "@"
+    packages:
+      - auth
+      - database
+      - "@common-validators"
+  
+  admin-panel:
+    tsAlias: "~"
+    packages:
+      - auth
+      - database
+      - ui-components
 ```
 
-With this configuration, both your `user-service` and `admin-panel` applications can seamlessly use the shared `auth` and `database` packages, while also leveraging external packages like `common-validators`.
+With this configuration, both your `user-service` and `admin-panel` applications can seamlessly use the shared `auth` and `database` packages, while also leveraging external packages like `@common-validators`. Each app can define its own TypeScript aliases and build configurations.
 
 ### Flexible Project Structure
 
-Knot organizes projects around `packages/` and `apps/` directories, creating a clear separation between reusable components and specific applications. This structure scales from small teams to large organizations.
+Knot organizes projects around `packages/` and `apps/` directories, creating a clear separation between reusable components and specific applications:
+
+```
+project_root/
+├── knot.yml              # Project configuration
+├── packages/
+│   ├── auth/
+│   │   ├── package.yml   # Package configuration
+│   │   └── src/
+│   └── database/
+│       ├── package.yml
+│       └── src/
+└── apps/
+    ├── user-service/
+    │   ├── app.yml       # App-specific configuration
+    │   ├── knot_packages/ # Symlinked packages
+    │   └── src/
+    └── admin-panel/
+        ├── app.yml
+        ├── knot_packages/
+        └── src/
+```
+
+This hierarchical configuration system allows for project-level, app-level, and package-level customization while maintaining consistency across the entire monorepo.
 
 ## Best Practices for Modular Development
 
