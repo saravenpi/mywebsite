@@ -6,7 +6,7 @@
   <title>Saravenpi - Full Stack Developer</title>
   <meta
     name="description"
-    content="Full Stack Developer passionate about creating beautiful and functional web applications. Specializing in modern web technologies."
+    content="Full Stack Developer passionate about creating beautiful and functional web applications."
   />
   <meta
     name="keywords"
@@ -16,7 +16,7 @@
   <meta property="og:title" content="Saravenpi - Full Stack Developer" />
   <meta
     property="og:description"
-    content="Full Stack Developer passionate about creating beautiful and functional web applications. Specializing in modern web technologies."
+    content="Full Stack Developer passionate about creating beautiful and functional web applications."
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://saravenpi.com" />
@@ -24,7 +24,7 @@
   <meta name="twitter:title" content="Saravenpi - Full Stack Developer" />
   <meta
     name="twitter:description"
-    content="Full Stack Developer passionate about creating beautiful and functional web applications. Specializing in modern web technologies."
+    content="Full Stack Developer passionate about creating beautiful and functional applications."
   />
 </svelte:head>
 

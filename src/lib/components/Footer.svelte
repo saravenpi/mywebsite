@@ -4,7 +4,7 @@
   <div class="max-w-6xl mx-auto p-8">
     <div class="flex flex-col items-center gap-4">
       <a
-        href="mailto:yann@klysium.com"
+        href="mailto:yann@kaktuse.net"
         class="flex items-center gap-3 px-6 py-3 bg-green-600 dark:bg-green-500 text-white rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-all duration-200 font-semibold"
       >
         <svg

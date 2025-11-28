@@ -38,7 +38,7 @@
 
     <div class="text-xl md:text-3xl flex flex-col gap-3">
       <p>I'm a 23 fullstack software developer</p>
-      <p>I'm currently studying computer science</p>
+      <p>Interested into decentralisation</p>
     </div>
 
     <div class="flex flex-row gap-6">
@@ -122,9 +122,9 @@
   >
     {#if music_text}
       <div class="flex items-center gap-2">
-        <Icon 
-          icon="solar:headphones-round-sound-bold-duotone" 
-          width="24" 
+        <Icon
+          icon="solar:headphones-round-sound-bold-duotone"
+          width="24"
           height="24"
           class="text-green-600 dark:text-green-400"
         />

@@ -1,6 +1,6 @@
 <!-- Floating Contact Button -->
 <a
-  href="mailto:yann@klysium.com"
+  href="mailto:yann@kaktuse.net"
   class="fixed z-50 flex items-center justify-center w-14 h-14 bg-green-600 dark:bg-green-500 text-white rounded-full shadow-lg hover:bg-green-700 dark:hover:bg-green-600 transition-all duration-200 hover:scale-110 bottom-6 left-6 md:bottom-8 md:left-8 md:top-auto top-6 md:right-auto right-6"
   title="Contact Me"
 >
