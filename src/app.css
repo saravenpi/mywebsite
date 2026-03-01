@@ -1,8 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Undefined';
+  src: url('/undefined-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import "../tailwind.config.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Poppins", sans-serif;
-  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200;
+  font-family: 'Undefined', monospace;
+  background: #faf6f0;
+  color: #4a3728;
+  line-height: 1.6;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #6a7d3e;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #507964;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 0.5rem 0;
+  font-weight: normal;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  border-bottom: 2px solid #4a3728;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  border: 2px solid #4a3728;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
 }

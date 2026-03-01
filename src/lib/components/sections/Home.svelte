@@ -1,136 +1,42 @@
 <script>
   import { onMount } from "svelte";
-  import Icon from "@iconify/svelte";
 
-  var music_text = null;
-  var url =
-    "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json";
+  let music_text = null;
+  const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json";
 
   onMount(() => {
     fetch(url).then((response) => {
       response.json().then((data) => {
-        var lasttrack = data.recenttracks.track[0];
+        const lasttrack = data.recenttracks.track[0];
         if (lasttrack["name"]) {
-          var artist = lasttrack.artist["#text"];
-          var title = lasttrack.name;
-          var listening = ` <a href="${lasttrack.url}" target="_blank" class="hover:underline font-bold">${title} by ${artist}</a>`;
-          music_text = listening;
-        } else music_text = null;
+          const artist = lasttrack.artist["#text"];
+          const title = lasttrack.name;
+          music_text = `${title} by ${artist}`;
+        }
       });
     });
   });
 </script>
 
-<div
-  class="flex flex-col justify-between h-[calc(100svh-4rem)] md:h-[calc(100svh-5rem)] w-full overflow-hidden pt-16 md:pt-20 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
->
-  <div />
-  <div class="w-full flex flex-col gap-6 rounded p-5 md:px-20 md:py-10">
-    <div class="flex flex-row gap-3 md:gap-6 items-center">
-      <img
-        alt="avatar"
-        src="https://avatars.githubusercontent.com/u/61117321"
-        class="rounded-full w-[6em] md:w-[10em]"
-      />
+<main>
+  <img
+    alt="avatar"
+    src="https://avatars.githubusercontent.com/u/61117321"
+    class="avatar"
+  />
 
-      <div class="text-3xl md:text-6xl font-extrabold">Hi I'm Saravenpi</div>
-    </div>
+  <h1>Hi I'm Saravenpi</h1>
 
-    <div class="text-xl md:text-3xl flex flex-col gap-3">
-      <p>I'm a 23 fullstack software developer</p>
-      <p>Interested into decentralisation</p>
-    </div>
+  <p>I'm a 23 fullstack software developer</p>
+  <p>Interested into decentralisation</p>
 
-    <div class="flex flex-row gap-6">
-      <a
-        title="github"
-        href="https://github.com/saravenpi"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="hover:opacity-40 duration-500 transition-opacity text-gray-800 dark:text-gray-200"
-        >
-          <path
-            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-          />
-        </svg>
-      </a>
+  <p>
+    <a href="https://github.com/saravenpi" target="_blank" rel="noopener noreferrer">GitHub</a> |
+    <a href="https://x.com/saravenpi" target="_blank" rel="noopener noreferrer">Twitter</a> |
+    <a href="mailto:saravenpi@tuta.io">Email</a>
+  </p>
 
-      <a
-        title="twitter"
-        href="https://x.com/saravenpi"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="hover:opacity-40 duration-500 transition-opacity text-gray-800 dark:text-gray-200"
-        >
-          <path
-            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-          />
-        </svg>
-      </a>
-
-      <a
-        title="email"
-        href="mailto:saravenpi@tuta.io"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="hover:opacity-40 duration-500 transition-opacity text-gray-800 dark:text-gray-200"
-        >
-          <path
-            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-          />
-          <polyline points="22,6 12,13 2,6" />
-        </svg>
-      </a>
-    </div>
-  </div>
-
-  <div
-    class="w-full md:flex flex-row md:justify-end text-md md:text-2xl text-gray-600 dark:text-gray-400 p-5 md:p-10"
-  >
-    {#if music_text}
-      <div class="flex items-center gap-2">
-        <Icon
-          icon="solar:headphones-round-sound-bold-duotone"
-          width="24"
-          height="24"
-          class="text-green-600 dark:text-green-400"
-        />
-        <span>Listening Now</span>
-        {@html music_text}
-      </div>
-    {/if}
-  </div>
-</div>
+  {#if music_text}
+    <p>🎧 Listening Now: {music_text}</p>
+  {/if}
+</main>
