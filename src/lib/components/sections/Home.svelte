@@ -37,6 +37,6 @@
   </p>
 
   {#if music_text}
-    <p>🎧 Listening Now: {music_text}</p>
+    <p style="margin-top: 2rem;">🎧 Listening Now: {music_text}</p>
   {/if}
 </main>
