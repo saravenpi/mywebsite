@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Icon from '@iconify/svelte';
   let music_text = null;
   let albumArt = null;
   const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=saravenpi&api_key=d2cafb7e30ed8b064a00fb67693d2a70&format=json";
@@ -24,7 +25,10 @@
 
 <main>
   <img alt="avatar" src="https://avatars.githubusercontent.com/u/61117321" class="avatar" />
-  <h1>Hi I'm Saravenpi</h1>
+  <h1 class="page-title">
+    <Icon icon="pixelarticons:home" width="28" />
+    <span>Hi I'm Saravenpi</span>
+  </h1>
   <p>I'm a 23 fullstack software developer</p>
   <p>Interested into decentralisation</p>
   <p>
@@ -48,6 +52,12 @@
 </main>
 
 <style>
+  .page-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .now-playing {
     margin-top: 2rem;
     padding: 1rem;

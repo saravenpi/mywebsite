@@ -1,4 +1,5 @@
 <script>
+  import Icon from '@iconify/svelte';
   const projects = [
     { name: "Knot", description: "A modern, language-agnostic monorepo package manager written in Rust that simplifies dependency management and builds across multiple apps and packages.", tech: ["Rust", "YAML", "TypeScript"], githubUrl: "https://github.com/saravenpi/knot" },
     { name: "Marcel", description: "Turn your life organisation into a game with Marcel, a web-based productivity application that gamifies task management and personal organization.", tech: ["Web Application"], liveUrl: "https://marcel.my" },
@@ -12,7 +13,10 @@
 </script>
 
 <main>
-  <h1>Projects</h1>
+  <h1 class="page-title">
+    <Icon icon="pixelarticons:code" width="28" />
+    <span>Projects</span>
+  </h1>
   {#each projects as project}
     <section>
       <h2>{project.name}</h2>
@@ -27,6 +31,12 @@
 </main>
 
 <style>
+  .page-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   section { margin: 2rem 0; padding: 1rem 0; border-bottom: 1px solid #cdb8a0; }
   section:last-child { border-bottom: none; }
 </style>

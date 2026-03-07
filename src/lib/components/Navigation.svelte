@@ -4,9 +4,9 @@
   import Icon from '@iconify/svelte';
 
   const sections = [
-    { label: "Home", href: "/" },
-    { label: "Projects", href: "/projects" },
-    { label: "Blog", href: "/blog" },
+    { label: "Home", href: "/", icon: "pixelarticons:home" },
+    { label: "Projects", href: "/projects", icon: "pixelarticons:code" },
+    { label: "Blog", href: "/blog", icon: "pixelarticons:article" },
   ];
 
   function isActive(href, pathname) {
@@ -44,8 +44,9 @@
 <nav>
   <div class="nav-links">
     {#each sections as section}
-      <a href={section.href} style={isActive(section.href, pathname) ? 'font-weight: bold;' : ''}>
-        {section.label}
+      <a href={section.href} class:active={isActive(section.href, pathname)}>
+        <Icon icon={section.icon} width="16" />
+        <span>{section.label}</span>
       </a>
     {/each}
   </div>
@@ -74,6 +75,16 @@
   .nav-links {
     display: flex;
     gap: 1rem;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .nav-links a.active {
+    font-weight: bold;
   }
 
   .theme-switcher {
