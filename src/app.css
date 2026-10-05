@@ -16,13 +16,13 @@
 }
 
 :root.dark {
-  --bg: #2a1f1a;
-  --fg: #e8dcc8;
-  --border: #3d2d22;
+  --bg: #000000;
+  --fg: #ffffff;
+  --border: #CCCCCC;
   --link: #8ca558;
   --link-hover: #5f8f76;
   --accent: #d4923a;
-  --subtle: #3d2d22;
+  --subtle: #CCCCCC;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
