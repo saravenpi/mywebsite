@@ -18,11 +18,11 @@
 :root.dark {
   --bg: #000000;
   --fg: #ffffff;
-  --border: #CCCCCC;
+  --border: #131313;
   --link: #8ca558;
   --link-hover: #5f8f76;
   --accent: #d4923a;
-  --subtle: #CCCCCC;
+  --subtle: #131313;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,7 +41,7 @@ body {
 a { color: var(--link); text-decoration: underline; }
 a:hover { color: var(--link-hover); }
 
-h1, h2, h3, h4, h5, h6 { margin: 1rem 0 0.5rem 0; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { margin: 1rem 0 0.5rem 0; font-weight: normal; }BB
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
